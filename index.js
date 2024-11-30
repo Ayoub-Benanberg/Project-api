@@ -2,6 +2,12 @@ const express = require('express');
 const app = express();
 const PORT = 8080;
 
+const cors = require('cors');
+
+// Allow all origins (you can specify specific origins for better security)
+app.use(cors());
+
+
 // Middleware to parse JSON request bodies
 app.use(express.json());
 
