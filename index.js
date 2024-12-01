@@ -25,14 +25,17 @@ const projects = [
                 name: "React",
                 image: {
                     src: "https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png",
-                    alt: "React-Logo"
+                    alt: "React-Logo",
+                    reactIcon: "<FaReact/>"
                 }
             },
             {
                 name: "Tailwind CSS",
                 image: {
                     src: "https://cdn.iconscout.com/icon/free/png-256/tailwindcss-3521648-2945278.png",
-                    alt: "Tailwind-CSS-Logo"
+                    alt: "Tailwind-CSS-Logo",
+                    reactIcon: "<RiTailwindCssFill />"
+
                 }
             }
         ],
@@ -55,14 +58,18 @@ const projects = [
                 name: "React",
                 image: {
                     src: "https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png",
-                    alt: "React-Logo"
+                    alt: "React-Logo",
+                    reactIcon: "<FaReact/>"
+
                 }
             },
             {
                 name: "Tailwind CSS",
                 image: {
                     src: "https://cdn.iconscout.com/icon/free/png-256/tailwindcss-3521648-2945278.png",
-                    alt: "Tailwind-CSS-Logo"
+                    alt: "Tailwind-CSS-Logo",
+                    reactIcon: "<RiTailwindCssFill />"
+
                 }
             }
         ],
@@ -85,21 +92,27 @@ const projects = [
                 name: "HTML",
                 image: {
                     src: "https://cdn.iconscout.com/icon/free/png-256/html5-40-1175193.png",
-                    alt: "HTML-Logo"
+                    alt: "HTML-Logo",
+                    reactIcon: "<FaHtml5 />"
+
                 }
             },
             {
                 name: "CSS",
                 image: {
                     src: "https://cdn.iconscout.com/icon/free/png-256/css3-11-1175239.png",
-                    alt: "CSS-Logo"
+                    alt: "CSS-Logo",
+                    reactIcon: "<FaCss3 />"
+
                 }
             },
             {
                 name: "Bootstrap",
                 image: {
                     src: "https://cdn.iconscout.com/icon/free/png-256/bootstrap-226077.png",
-                    alt: "Bootstrap-Logo"
+                    alt: "Bootstrap-Logo",
+                    reactIcon: "<FaBootstrap />"
+
                 }
             }
         ],
