@@ -16,8 +16,26 @@ const projects = [
     {
         id: 1,
         title: "The Block",
-        description: "A responsive single-page website for a construction company, showcasing 30+ years of expertise. It highlights services, projects, achievements, and provides an intuitive contact form, offering a professional and user-friendly experience.",
-        technologies: ["React", "Tailwind CSS"],
+        description: {
+            en: "A responsive website for a construction company, showcasing services, projects, and achievements with a professional and user-friendly design.",
+            fr: "Un site web responsive pour une entreprise de construction, mettant en valeur les services, projets et réalisations avec un design professionnel et convivial."
+        },
+        technologies: [
+            {
+                name: "React",
+                image: {
+                    src: "https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png",
+                    alt: "React-Logo"
+                }
+            },
+            {
+                name: "Tailwind CSS",
+                image: {
+                    src: "https://cdn.iconscout.com/icon/free/png-256/tailwindcss-3521648-2945278.png",
+                    alt: "Tailwind-CSS-Logo"
+                }
+            }
+        ],
         url: "https://the-block-cc.vercel.app/",
         repoLink: "https://github.com/Ayoub-Benanberg/The-Block",
         image: {
@@ -28,28 +46,72 @@ const projects = [
     {
         id: 2,
         title: "Homes First",
-        description: "Homes First is designed to cater to the unique needs of every family, offering tailored cleaning experiences that redefine cleanliness. Our professional team ensures every corner of your home shines with bespoke luxury.",
-        technologies: ["React", "Tailwind CSS"],
-        url: "https://the-block-cc.vercel.app/",
+        description: {
+            en: "A luxury cleaning service website offering tailored experiences, ensuring every home corner shines with bespoke cleanliness.",
+            fr: "Un site web de service de nettoyage haut de gamme, offrant des expériences personnalisées pour garantir une propreté impeccable à chaque foyer."
+        },
+        technologies: [
+            {
+                name: "React",
+                image: {
+                    src: "https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png",
+                    alt: "React-Logo"
+                }
+            },
+            {
+                name: "Tailwind CSS",
+                image: {
+                    src: "https://cdn.iconscout.com/icon/free/png-256/tailwindcss-3521648-2945278.png",
+                    alt: "Tailwind-CSS-Logo"
+                }
+            }
+        ],
+        url: "https://home-first.vercel.app/",
         repoLink: "https://github.com/Ayoub-Benanberg/Home-First",
         image: {
             src: "https://i.ibb.co/HGZctZQ/home.png",
-            alt: "Homes-First",
+            alt: "Homes-First"
         },
     },
     {
         id: 3,
         title: "Snazzy Store",
-        description: "E-Commerce website with a responsive design using HTML, CSS, and Bootstrap.",
-        technologies: ["HTML", "CSS", "BOOTSTRAP"],
+        description: {
+            en: "E-Commerce website with a responsive built using HTML, CSS, and Bootstrap.",
+            fr: "Un site e-commerce au design responsive, développé avec HTML, CSS et Bootstrap."
+        },
+        technologies: [
+            {
+                name: "HTML",
+                image: {
+                    src: "https://cdn.iconscout.com/icon/free/png-256/html5-40-1175193.png",
+                    alt: "HTML-Logo"
+                }
+            },
+            {
+                name: "CSS",
+                image: {
+                    src: "https://cdn.iconscout.com/icon/free/png-256/css3-11-1175239.png",
+                    alt: "CSS-Logo"
+                }
+            },
+            {
+                name: "Bootstrap",
+                image: {
+                    src: "https://cdn.iconscout.com/icon/free/png-256/bootstrap-226077.png",
+                    alt: "Bootstrap-Logo"
+                }
+            }
+        ],
         url: "https://ayoub-benanberg.github.io/Snazzy-Store/",
         repoLink: "https://github.com/Ayoub-Benanberg/Snazzy-Store",
         image: {
             src: "https://i.ibb.co/KwsghKP/snazzy.png",
-            alt: "Snazzy",
+            alt: "Snazzy"
         },
     }
 ];
+
 
 // GET route to retrieve all projects
 app.get('/projects', (req, res) => {
