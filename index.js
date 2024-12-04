@@ -156,6 +156,28 @@ app.post('/projects', (req, res) => {
     });
 });
 
+
+// DELETE route to remove a project by ID
+app.delete('/projects/:id', (req, res) => {
+    const { id } = req.params;
+
+    // Find the index of the project to be deleted
+    const projectIndex = projects.findIndex(project => project.id === parseInt(id));
+
+    if (projectIndex === -1) {
+        return res.status(404).send({ message: "Project not found!" });
+    }
+
+    // Remove the project from the data store
+    const deletedProject = projects.splice(projectIndex, 1);
+
+    res.status(200).send({
+        message: "Project deleted successfully",
+        project: deletedProject[0],
+    });
+});
+
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
