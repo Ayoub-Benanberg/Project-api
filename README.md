@@ -1,7 +1,3 @@
-Got it! Here's how you can update your **README** file to include the DELETE method for your API:
-
----
-
 # Project API
 
 A Node.js and Express-based API to showcase and manage projects for a portfolio.
