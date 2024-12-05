@@ -1,3 +1,7 @@
+Got it! Here's how you can update your **README** file to include the DELETE method for your API:
+
+---
+
 # Project API
 
 A Node.js and Express-based API to showcase and manage projects for a portfolio.
@@ -6,6 +10,7 @@ A Node.js and Express-based API to showcase and manage projects for a portfolio.
 
 - **Retrieve Projects**: View all portfolio projects via a GET request.
 - **Add New Projects**: Add projects dynamically via a POST request.
+- **Delete Projects**: Delete a project by its ID via a DELETE request.
 - **In-Memory Storage**: Projects are stored temporarily during runtime.
 
 ## API Endpoints
@@ -70,6 +75,31 @@ A Node.js and Express-based API to showcase and manage projects for a portfolio.
 }
 ```
 
+### 3. Delete a Project
+**DELETE** `/projects/:id`  
+- Deletes a project by its `id`.
+
+**Example Request**:
+```bash
+DELETE /projects/1
+```
+
+**Example Response (Success)**:
+```json
+{
+  "message": "Project deleted successfully",
+  "id": 1
+}
+```
+
+**Example Response (Project Not Found)**:
+```json
+{
+  "message": "Project not found",
+  "id": 1
+}
+```
+
 ## Running Locally
 
 1. Clone the repository:
@@ -104,4 +134,4 @@ Access it live: [https://my-personal-portfolio-project-api.onrender.com](https:/
 
 **Ayoub Benanberg**  
 [GitHub](https://github.com/Ayoub-Benanberg)  
-[Portfolio](#) _(Replace with your actual portfolio link)_
+[Portfolio](https://benanberg-ayoub.vercel.app/)
