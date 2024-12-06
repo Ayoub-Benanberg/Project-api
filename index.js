@@ -129,7 +129,7 @@ app.post('/projects', (req, res) => {
     const { title, description, technologies, url, image, repoLink } = req.body;
 
     // Validation
-    if (!title || !description || !technologies || !url || !repoLink || !image.src) {
+    if (!title || !description || !technologies || !repoLink || !image.src) {
         return res.status(400).send({ message: "All fields are required!" });
     }
 
